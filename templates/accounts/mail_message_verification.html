@@ -1,0 +1,11 @@
+{% autoescape off %}
+
+
+Hello, {{user.full_name}}, this is your Shopeasy account verification link. Please verify your account by clicking on this link.
+https://{{domain}}{% url 'activate' uidb64=uid token=token %}.
+
+If you think it's not you then please ignore this email. Have a nice day.
+
+
+
+{% endautoescape %}

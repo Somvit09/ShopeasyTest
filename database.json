@@ -1,0 +1,5429 @@
+{
+    "type": "database",
+    "name": "db",
+    "objects": [
+        {
+            "type": "table",
+            "database": null,
+            "name": "accounts_accounts",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"accounts_accounts\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"password\" varchar(128) NOT NULL, \"full_name\" varchar(150) NOT NULL, \"username\" varchar(50) NOT NULL UNIQUE, \"email\" varchar(150) NOT NULL UNIQUE, \"phone_number\" varchar(50) NOT NULL, \"date_joined\" datetime NOT NULL, \"last_login\" datetime NOT NULL, \"is_admin\" bool NOT NULL, \"is_staff\" bool NOT NULL, \"is_active\" bool NOT NULL, \"is_superadmin\" bool NOT NULL)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "password",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "full_name",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "username",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "UNIQUE",
+                            "definition": "UNIQUE"
+                        }
+                    ]
+                },
+                {
+                    "name": "email",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "UNIQUE",
+                            "definition": "UNIQUE"
+                        }
+                    ]
+                },
+                {
+                    "name": "phone_number",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "date_joined",
+                    "type": "datetime",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "last_login",
+                    "type": "datetime",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "is_admin",
+                    "type": "bool",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "is_staff",
+                    "type": "bool",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "is_active",
+                    "type": "bool",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "is_superadmin",
+                    "type": "bool",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    "pbkdf2_sha256$320000$dujqSL70DqLklEjF618Omb$wcdaMA8X05Y2ucKQWHqc4l1s6BpJikSftGIqDV6uioM=",
+                    "sam",
+                    "sam",
+                    "a@gmail.com",
+                    "",
+                    "2022-06-21 16:57:31.202049",
+                    "2022-07-18 19:04:07.595648",
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                [
+                    2,
+                    "pbkdf2_sha256$320000$lLwl45XvDf597Yig0ep9ua$oHwXZ4GvYV9AsbUPM4vBJWTKrNQfpS\/Yan\/c2lrQxeo=",
+                    "sam parker",
+                    "sam09",
+                    "developer.09.sam@gmail.com",
+                    "",
+                    "2022-06-21 17:46:58.992253",
+                    "2022-08-06 18:36:01.002678",
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                [
+                    3,
+                    "pbkdf2_sha256$320000$ebEc38Ae7WGA8GGWi2WcNj$UdjXPacWCLDk8dAC290b9YO0i\/P1HMjGn7N525VdlMo=",
+                    "sam092000",
+                    "sam092000",
+                    "sam09@gmail.com",
+                    "",
+                    "2022-07-05 18:58:28.407619",
+                    "2022-07-13 19:47:50.261907",
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                [
+                    10,
+                    "pbkdf2_sha256$320000$q1JEKO1PUr2z715oETFWfq$OsFetEUC89o6QJRexoRPNGWFIWLbxNlue16xwJIct2A=",
+                    "s",
+                    "c",
+                    "c@gmail.com",
+                    "43",
+                    "2022-07-16 07:32:17.178803",
+                    "2022-07-16 07:32:17.178803",
+                    0,
+                    0,
+                    1,
+                    0
+                ],
+                [
+                    11,
+                    "pbkdf2_sha256$320000$iWze5FmDtsbE8s3Gm2AJs7$AR1IViLlZd30Pu7dEGrW+HNr6X+dLNV8IVRv55FpD78=",
+                    "d",
+                    "d",
+                    "d@gmail.com",
+                    "7435",
+                    "2022-07-16 07:34:29.641334",
+                    "2022-07-16 07:34:29.641334",
+                    0,
+                    0,
+                    1,
+                    0
+                ],
+                [
+                    13,
+                    "pbkdf2_sha256$320000$47i3jQChePbmPqK3pnwcpX$61pK8mkEHJjOIamBscMKmDHjObf21WabZYgaWnEZJj8=",
+                    "Somvit Maity",
+                    "bcdvdsvdvs",
+                    "b@gmail.com",
+                    "+916291646550",
+                    "2022-07-16 07:56:00.267055",
+                    "2022-08-06 18:50:54.295870",
+                    0,
+                    0,
+                    1,
+                    0
+                ],
+                [
+                    22,
+                    "pbkdf2_sha256$320000$jStW315H36r5zE1MJd6KgB$udwfjQx3Qgl1tsSKxHvZ9xWfRue3iTiAGfwnSFTmKww=",
+                    "g",
+                    "g",
+                    "somvitmaity@gmail.com",
+                    "354356",
+                    "2022-07-16 18:29:27.448253",
+                    "2022-08-01 17:13:44.592335",
+                    0,
+                    0,
+                    1,
+                    0
+                ],
+                [
+                    23,
+                    "pbkdf2_sha256$320000$8rTUUX8prr6bSBOEywVeDA$uZJrHRE+phQ54Jt0vneWRc5dFwqLnKdeq1tya46AcOs=",
+                    "Somvit Maity",
+                    "n",
+                    "n@gmail.com",
+                    "356525",
+                    "2022-08-06 12:41:07.873467",
+                    "2022-08-06 12:45:43.727211",
+                    0,
+                    0,
+                    1,
+                    0
+                ],
+                [
+                    24,
+                    "pbkdf2_sha256$320000$TiGrONiCqMpzOh4MyhYojU$OGjShu0dvRXAV90NRA9T7wOl6+ZQuTNQAf3EE+FL8u4=",
+                    "Somvit Maity",
+                    "scdvsdvsd",
+                    "somvitmaity09092000@gmail.com",
+                    "24542345",
+                    "2022-08-06 17:27:21.840900",
+                    "2022-08-06 17:27:21.840900",
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "accounts_userprofile",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"accounts_userprofile\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"address_line_1\" varchar(350) NOT NULL, \"address_line_2\" varchar(350) NOT NULL, \"profile_picture\" varchar(100) NOT NULL, \"country\" varchar(150) NOT NULL, \"state\" varchar(150) NOT NULL, \"city\" varchar(150) NOT NULL, \"user_id\" bigint NOT NULL UNIQUE REFERENCES \"accounts_accounts\" (\"id\") DEFERRABLE INITIALLY DEFERRED)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "address_line_1",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "address_line_2",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "profile_picture",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "country",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "state",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "city",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "user_id",
+                    "type": "bigint",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "UNIQUE",
+                            "definition": "UNIQUE "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"accounts_accounts\" (\"id\") "
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    2,
+                    "Jagadishpur Hat, Howrah",
+                    "Kayalpara",
+                    "user profile\/avatar2_cSkZKnt.jpg",
+                    "India",
+                    "West Bengal",
+                    "Howrah",
+                    13
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "admin_honeypot_loginattempt",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"admin_honeypot_loginattempt\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"username\" varchar(255) NULL, \"ip_address\" char(39) NULL, \"session_key\" varchar(50) NULL, \"user_agent\" text NULL, \"timestamp\" datetime NOT NULL, \"path\" text NULL)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "username",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": null,
+                            "definition": "NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "ip_address",
+                    "type": "char",
+                    "constraints": [
+                        {
+                            "type": null,
+                            "definition": "NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "session_key",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": null,
+                            "definition": "NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "user_agent",
+                    "type": "text",
+                    "constraints": [
+                        {
+                            "type": null,
+                            "definition": "NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "timestamp",
+                    "type": "datetime",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "path",
+                    "type": "text",
+                    "constraints": [
+                        {
+                            "type": null,
+                            "definition": "NULL"
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    "developer.09.sam@gmail.com",
+                    "127.0.0.1",
+                    "accvszj5uu6nsk4wh7h7aq2q49lira0d",
+                    "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/104.0.5112.81 Safari\/537.36",
+                    "2022-08-06 18:36:13.577110",
+                    "\/admin\/login\/?next=\/admin\/"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "auth_group",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"auth_group\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"name\" varchar(150) NOT NULL UNIQUE)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "name",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "UNIQUE",
+                            "definition": "UNIQUE"
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "auth_group_permissions",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"auth_group_permissions\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"group_id\" integer NOT NULL REFERENCES \"auth_group\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"permission_id\" integer NOT NULL REFERENCES \"auth_permission\" (\"id\") DEFERRABLE INITIALLY DEFERRED)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "group_id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"auth_group\" (\"id\") "
+                        }
+                    ]
+                },
+                {
+                    "name": "permission_id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"auth_permission\" (\"id\") "
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "auth_permission",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"auth_permission\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"content_type_id\" integer NOT NULL REFERENCES \"django_content_type\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"codename\" varchar(100) NOT NULL, \"name\" varchar(255) NOT NULL)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "content_type_id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"django_content_type\" (\"id\") "
+                        }
+                    ]
+                },
+                {
+                    "name": "codename",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "name",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    1,
+                    "add_accounts",
+                    "Can add accounts"
+                ],
+                [
+                    2,
+                    1,
+                    "change_accounts",
+                    "Can change accounts"
+                ],
+                [
+                    3,
+                    1,
+                    "delete_accounts",
+                    "Can delete accounts"
+                ],
+                [
+                    4,
+                    1,
+                    "view_accounts",
+                    "Can view accounts"
+                ],
+                [
+                    5,
+                    2,
+                    "add_category",
+                    "Can add Category"
+                ],
+                [
+                    6,
+                    2,
+                    "change_category",
+                    "Can change Category"
+                ],
+                [
+                    7,
+                    2,
+                    "delete_category",
+                    "Can delete Category"
+                ],
+                [
+                    8,
+                    2,
+                    "view_category",
+                    "Can view Category"
+                ],
+                [
+                    9,
+                    3,
+                    "add_logentry",
+                    "Can add log entry"
+                ],
+                [
+                    10,
+                    3,
+                    "change_logentry",
+                    "Can change log entry"
+                ],
+                [
+                    11,
+                    3,
+                    "delete_logentry",
+                    "Can delete log entry"
+                ],
+                [
+                    12,
+                    3,
+                    "view_logentry",
+                    "Can view log entry"
+                ],
+                [
+                    13,
+                    4,
+                    "add_permission",
+                    "Can add permission"
+                ],
+                [
+                    14,
+                    4,
+                    "change_permission",
+                    "Can change permission"
+                ],
+                [
+                    15,
+                    4,
+                    "delete_permission",
+                    "Can delete permission"
+                ],
+                [
+                    16,
+                    4,
+                    "view_permission",
+                    "Can view permission"
+                ],
+                [
+                    17,
+                    5,
+                    "add_group",
+                    "Can add group"
+                ],
+                [
+                    18,
+                    5,
+                    "change_group",
+                    "Can change group"
+                ],
+                [
+                    19,
+                    5,
+                    "delete_group",
+                    "Can delete group"
+                ],
+                [
+                    20,
+                    5,
+                    "view_group",
+                    "Can view group"
+                ],
+                [
+                    21,
+                    6,
+                    "add_contenttype",
+                    "Can add content type"
+                ],
+                [
+                    22,
+                    6,
+                    "change_contenttype",
+                    "Can change content type"
+                ],
+                [
+                    23,
+                    6,
+                    "delete_contenttype",
+                    "Can delete content type"
+                ],
+                [
+                    24,
+                    6,
+                    "view_contenttype",
+                    "Can view content type"
+                ],
+                [
+                    25,
+                    7,
+                    "add_session",
+                    "Can add session"
+                ],
+                [
+                    26,
+                    7,
+                    "change_session",
+                    "Can change session"
+                ],
+                [
+                    27,
+                    7,
+                    "delete_session",
+                    "Can delete session"
+                ],
+                [
+                    28,
+                    7,
+                    "view_session",
+                    "Can view session"
+                ],
+                [
+                    29,
+                    8,
+                    "add_product",
+                    "Can add product"
+                ],
+                [
+                    30,
+                    8,
+                    "change_product",
+                    "Can change product"
+                ],
+                [
+                    31,
+                    8,
+                    "delete_product",
+                    "Can delete product"
+                ],
+                [
+                    32,
+                    8,
+                    "view_product",
+                    "Can view product"
+                ],
+                [
+                    33,
+                    9,
+                    "add_cart",
+                    "Can add cart"
+                ],
+                [
+                    34,
+                    9,
+                    "change_cart",
+                    "Can change cart"
+                ],
+                [
+                    35,
+                    9,
+                    "delete_cart",
+                    "Can delete cart"
+                ],
+                [
+                    36,
+                    9,
+                    "view_cart",
+                    "Can view cart"
+                ],
+                [
+                    37,
+                    10,
+                    "add_cartitem",
+                    "Can add cart item"
+                ],
+                [
+                    38,
+                    10,
+                    "change_cartitem",
+                    "Can change cart item"
+                ],
+                [
+                    39,
+                    10,
+                    "delete_cartitem",
+                    "Can delete cart item"
+                ],
+                [
+                    40,
+                    10,
+                    "view_cartitem",
+                    "Can view cart item"
+                ],
+                [
+                    41,
+                    11,
+                    "add_variationmodel",
+                    "Can add variation model"
+                ],
+                [
+                    42,
+                    11,
+                    "change_variationmodel",
+                    "Can change variation model"
+                ],
+                [
+                    43,
+                    11,
+                    "delete_variationmodel",
+                    "Can delete variation model"
+                ],
+                [
+                    44,
+                    11,
+                    "view_variationmodel",
+                    "Can view variation model"
+                ],
+                [
+                    45,
+                    12,
+                    "add_payment",
+                    "Can add payment"
+                ],
+                [
+                    46,
+                    12,
+                    "change_payment",
+                    "Can change payment"
+                ],
+                [
+                    47,
+                    12,
+                    "delete_payment",
+                    "Can delete payment"
+                ],
+                [
+                    48,
+                    12,
+                    "view_payment",
+                    "Can view payment"
+                ],
+                [
+                    49,
+                    13,
+                    "add_order_product",
+                    "Can add order_product"
+                ],
+                [
+                    50,
+                    13,
+                    "change_order_product",
+                    "Can change order_product"
+                ],
+                [
+                    51,
+                    13,
+                    "delete_order_product",
+                    "Can delete order_product"
+                ],
+                [
+                    52,
+                    13,
+                    "view_order_product",
+                    "Can view order_product"
+                ],
+                [
+                    53,
+                    14,
+                    "add_order",
+                    "Can add order"
+                ],
+                [
+                    54,
+                    14,
+                    "change_order",
+                    "Can change order"
+                ],
+                [
+                    55,
+                    14,
+                    "delete_order",
+                    "Can delete order"
+                ],
+                [
+                    56,
+                    14,
+                    "view_order",
+                    "Can view order"
+                ],
+                [
+                    57,
+                    15,
+                    "add_reviewrating",
+                    "Can add review rating"
+                ],
+                [
+                    58,
+                    15,
+                    "change_reviewrating",
+                    "Can change review rating"
+                ],
+                [
+                    59,
+                    15,
+                    "delete_reviewrating",
+                    "Can delete review rating"
+                ],
+                [
+                    60,
+                    15,
+                    "view_reviewrating",
+                    "Can view review rating"
+                ],
+                [
+                    61,
+                    16,
+                    "add_userprofile",
+                    "Can add user profile"
+                ],
+                [
+                    62,
+                    16,
+                    "change_userprofile",
+                    "Can change user profile"
+                ],
+                [
+                    63,
+                    16,
+                    "delete_userprofile",
+                    "Can delete user profile"
+                ],
+                [
+                    64,
+                    16,
+                    "view_userprofile",
+                    "Can view user profile"
+                ],
+                [
+                    65,
+                    17,
+                    "add_productgallerymodel",
+                    "Can add product gallery model"
+                ],
+                [
+                    66,
+                    17,
+                    "change_productgallerymodel",
+                    "Can change product gallery model"
+                ],
+                [
+                    67,
+                    17,
+                    "delete_productgallerymodel",
+                    "Can delete product gallery model"
+                ],
+                [
+                    68,
+                    17,
+                    "view_productgallerymodel",
+                    "Can view product gallery model"
+                ],
+                [
+                    69,
+                    18,
+                    "add_loginattempt",
+                    "Can add login attempt"
+                ],
+                [
+                    70,
+                    18,
+                    "change_loginattempt",
+                    "Can change login attempt"
+                ],
+                [
+                    71,
+                    18,
+                    "delete_loginattempt",
+                    "Can delete login attempt"
+                ],
+                [
+                    72,
+                    18,
+                    "view_loginattempt",
+                    "Can view login attempt"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "carts_cart",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"carts_cart\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"cart_id\" varchar(250) NOT NULL, \"date_added\" datetime NOT NULL)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "cart_id",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "date_added",
+                    "type": "datetime",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "carts_cartitem",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"carts_cartitem\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"quantity\" integer NOT NULL, \"is_active\" bool NOT NULL, \"product_id\" bigint NOT NULL REFERENCES \"store_product\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"user_id\" bigint NULL REFERENCES \"accounts_accounts\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"cart_id\" bigint NULL REFERENCES \"carts_cart\" (\"id\") DEFERRABLE INITIALLY DEFERRED)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "quantity",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "is_active",
+                    "type": "bool",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "product_id",
+                    "type": "bigint",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"store_product\" (\"id\") "
+                        }
+                    ]
+                },
+                {
+                    "name": "user_id",
+                    "type": "bigint",
+                    "constraints": [
+                        {
+                            "type": null,
+                            "definition": "NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"accounts_accounts\" (\"id\") "
+                        }
+                    ]
+                },
+                {
+                    "name": "cart_id",
+                    "type": "bigint",
+                    "constraints": [
+                        {
+                            "type": null,
+                            "definition": "NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"carts_cart\" (\"id\") "
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    78,
+                    1,
+                    1,
+                    2,
+                    2,
+                    null
+                ],
+                [
+                    80,
+                    1,
+                    1,
+                    1,
+                    2,
+                    null
+                ],
+                [
+                    81,
+                    1,
+                    1,
+                    2,
+                    2,
+                    null
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "carts_cartitem_variations",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"carts_cartitem_variations\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"cartitem_id\" bigint NOT NULL REFERENCES \"carts_cartitem\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"variationmodel_id\" bigint NOT NULL REFERENCES \"store_variationmodel\" (\"id\") DEFERRABLE INITIALLY DEFERRED)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "cartitem_id",
+                    "type": "bigint",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"carts_cartitem\" (\"id\") "
+                        }
+                    ]
+                },
+                {
+                    "name": "variationmodel_id",
+                    "type": "bigint",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"store_variationmodel\" (\"id\") "
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    74,
+                    78,
+                    2
+                ],
+                [
+                    75,
+                    78,
+                    4
+                ],
+                [
+                    77,
+                    80,
+                    3
+                ],
+                [
+                    78,
+                    81,
+                    4
+                ],
+                [
+                    79,
+                    81,
+                    6
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "category_category",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"category_category\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"category_name\" varchar(250) NOT NULL UNIQUE, \"slug\" varchar(100) NOT NULL UNIQUE, \"category_img\" varchar(100) NOT NULL, \"description\" text NOT NULL)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "category_name",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "UNIQUE",
+                            "definition": "UNIQUE"
+                        }
+                    ]
+                },
+                {
+                    "name": "slug",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "UNIQUE",
+                            "definition": "UNIQUE"
+                        }
+                    ]
+                },
+                {
+                    "name": "category_img",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "description",
+                    "type": "text",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    2,
+                    "Jeans",
+                    "jeans",
+                    "photos\/categories\/ATX-Jeans.jpg",
+                    ""
+                ],
+                [
+                    3,
+                    "Jackets",
+                    "jackets",
+                    "photos\/categories\/jackets_jZjDbSj.jpg",
+                    ""
+                ],
+                [
+                    4,
+                    "Shirts",
+                    "shirts",
+                    "photos\/categories\/shirts.jpg",
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint"
+                ],
+                [
+                    5,
+                    "Shoes",
+                    "shoes",
+                    "photos\/categories\/shoes.png",
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint"
+                ],
+                [
+                    6,
+                    "Tshirts",
+                    "tshirts",
+                    "photos\/categories\/tshirts.jpg",
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "django_admin_log",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"django_admin_log\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"action_time\" datetime NOT NULL, \"object_id\" text NULL, \"object_repr\" varchar(200) NOT NULL, \"change_message\" text NOT NULL, \"content_type_id\" integer NULL REFERENCES \"django_content_type\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"user_id\" bigint NOT NULL REFERENCES \"accounts_accounts\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"action_flag\" smallint unsigned NOT NULL CHECK (\"action_flag\" >= 0))",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "action_time",
+                    "type": "datetime",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "object_id",
+                    "type": "text",
+                    "constraints": [
+                        {
+                            "type": null,
+                            "definition": "NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "object_repr",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "change_message",
+                    "type": "text",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "content_type_id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": null,
+                            "definition": "NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"django_content_type\" (\"id\") "
+                        }
+                    ]
+                },
+                {
+                    "name": "user_id",
+                    "type": "bigint",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"accounts_accounts\" (\"id\") "
+                        }
+                    ]
+                },
+                {
+                    "name": "action_flag",
+                    "type": "smallint unsigned",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "CHECK",
+                            "definition": "CHECK (\"action_flag\" >= 0)"
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    "2022-06-21 18:31:43.538979",
+                    "1",
+                    "axsZCSCSCSCC",
+                    "[{\"added\": {}}]",
+                    2,
+                    2,
+                    1
+                ],
+                [
+                    2,
+                    "2022-06-21 18:32:59.851596",
+                    "1",
+                    "axsZCSCSCSCC",
+                    "[{\"changed\": {\"fields\": [\"Category img\"]}}]",
+                    2,
+                    2,
+                    2
+                ],
+                [
+                    3,
+                    "2022-06-21 18:34:57.040273",
+                    "1",
+                    "axsZCSCSCSCC",
+                    "[{\"changed\": {\"fields\": [\"Category img\"]}}]",
+                    2,
+                    2,
+                    2
+                ],
+                [
+                    4,
+                    "2022-06-21 18:36:33.039755",
+                    "1",
+                    "axsZCSCSCSCC",
+                    "",
+                    2,
+                    2,
+                    3
+                ],
+                [
+                    5,
+                    "2022-06-21 18:39:57.600837",
+                    "1",
+                    "adsddsc",
+                    "[{\"added\": {}}]",
+                    2,
+                    2,
+                    1
+                ],
+                [
+                    6,
+                    "2022-07-05 19:19:16.891889",
+                    "1",
+                    "adsddsc",
+                    "",
+                    2,
+                    3,
+                    3
+                ],
+                [
+                    7,
+                    "2022-07-05 19:19:33.639782",
+                    "2",
+                    "Jeans",
+                    "[{\"added\": {}}]",
+                    2,
+                    3,
+                    1
+                ],
+                [
+                    8,
+                    "2022-07-05 19:19:52.805615",
+                    "3",
+                    "Jackets",
+                    "[{\"added\": {}}]",
+                    2,
+                    3,
+                    1
+                ],
+                [
+                    9,
+                    "2022-07-05 19:20:29.367970",
+                    "1",
+                    "US-Polo-Assn_Jacket",
+                    "[{\"added\": {}}]",
+                    8,
+                    3,
+                    1
+                ],
+                [
+                    10,
+                    "2022-07-05 19:20:58.353521",
+                    "2",
+                    "Levis",
+                    "[{\"added\": {}}]",
+                    8,
+                    3,
+                    1
+                ],
+                [
+                    11,
+                    "2022-07-07 16:50:28.106311",
+                    "1",
+                    "US-Polo-Assn_Jacket",
+                    "[]",
+                    8,
+                    3,
+                    2
+                ],
+                [
+                    12,
+                    "2022-07-09 06:59:29.092961",
+                    "2",
+                    "Levis",
+                    "[{\"changed\": {\"fields\": [\"Description\"]}}]",
+                    8,
+                    3,
+                    2
+                ],
+                [
+                    13,
+                    "2022-07-09 15:41:47.545654",
+                    "2",
+                    "Levis",
+                    "[{\"changed\": {\"fields\": [\"Stock\"]}}]",
+                    8,
+                    3,
+                    2
+                ],
+                [
+                    14,
+                    "2022-07-09 15:43:08.908533",
+                    "2",
+                    "Levis",
+                    "[{\"changed\": {\"fields\": [\"Stock\"]}}]",
+                    8,
+                    3,
+                    2
+                ],
+                [
+                    15,
+                    "2022-07-13 14:44:39.559012",
+                    "1",
+                    "VariationModel object (1)",
+                    "[{\"added\": {}}]",
+                    11,
+                    3,
+                    1
+                ],
+                [
+                    16,
+                    "2022-07-13 14:45:04.567717",
+                    "2",
+                    "VariationModel object (2)",
+                    "[{\"added\": {}}]",
+                    11,
+                    3,
+                    1
+                ],
+                [
+                    17,
+                    "2022-07-13 14:49:02.572474",
+                    "2",
+                    "VariationModel object (2)",
+                    "[{\"changed\": {\"fields\": [\"Is active\"]}}]",
+                    11,
+                    3,
+                    2
+                ],
+                [
+                    18,
+                    "2022-07-13 14:49:07.426096",
+                    "2",
+                    "VariationModel object (2)",
+                    "[{\"changed\": {\"fields\": [\"Is active\"]}}]",
+                    11,
+                    3,
+                    2
+                ],
+                [
+                    19,
+                    "2022-07-13 15:42:40.887047",
+                    "2",
+                    "VariationModel object (2)",
+                    "[]",
+                    11,
+                    3,
+                    2
+                ],
+                [
+                    20,
+                    "2022-07-13 15:43:54.429345",
+                    "3",
+                    "VariationModel object (3)",
+                    "[{\"added\": {}}]",
+                    11,
+                    3,
+                    1
+                ],
+                [
+                    21,
+                    "2022-07-13 15:44:07.070287",
+                    "4",
+                    "VariationModel object (4)",
+                    "[{\"added\": {}}]",
+                    11,
+                    3,
+                    1
+                ],
+                [
+                    22,
+                    "2022-07-13 19:24:33.577468",
+                    "4",
+                    "Large",
+                    "[]",
+                    11,
+                    3,
+                    2
+                ],
+                [
+                    23,
+                    "2022-07-13 19:24:42.791896",
+                    "5",
+                    "Orange",
+                    "[{\"added\": {}}]",
+                    11,
+                    3,
+                    1
+                ],
+                [
+                    24,
+                    "2022-07-13 19:24:55.762935",
+                    "6",
+                    "Yellow",
+                    "[{\"added\": {}}]",
+                    11,
+                    3,
+                    1
+                ],
+                [
+                    25,
+                    "2022-07-13 19:25:07.888483",
+                    "7",
+                    "Yellow",
+                    "[{\"added\": {}}]",
+                    11,
+                    3,
+                    1
+                ],
+                [
+                    26,
+                    "2022-07-13 19:25:16.124123",
+                    "8",
+                    "Orange",
+                    "[{\"added\": {}}]",
+                    11,
+                    3,
+                    1
+                ],
+                [
+                    27,
+                    "2022-07-13 19:25:42.822933",
+                    "9",
+                    "Medium",
+                    "[{\"added\": {}}]",
+                    11,
+                    3,
+                    1
+                ],
+                [
+                    28,
+                    "2022-07-13 19:25:49.418439",
+                    "10",
+                    "M",
+                    "[{\"added\": {}}]",
+                    11,
+                    3,
+                    1
+                ],
+                [
+                    29,
+                    "2022-07-13 19:25:55.847302",
+                    "10",
+                    "Medium",
+                    "[{\"changed\": {\"fields\": [\"Variation value\"]}}]",
+                    11,
+                    3,
+                    2
+                ],
+                [
+                    30,
+                    "2022-07-16 07:35:51.161030",
+                    "9",
+                    "sfsdgsdged@gmail.com",
+                    "",
+                    1,
+                    1,
+                    3
+                ],
+                [
+                    31,
+                    "2022-07-16 07:35:51.323112",
+                    "8",
+                    "somvit@gmail.com",
+                    "",
+                    1,
+                    1,
+                    3
+                ],
+                [
+                    32,
+                    "2022-07-16 07:35:51.473708",
+                    "7",
+                    "snehalisamanta@gmail.com",
+                    "",
+                    1,
+                    1,
+                    3
+                ],
+                [
+                    33,
+                    "2022-07-16 07:35:51.607350",
+                    "6",
+                    "snehali@gmail.com",
+                    "",
+                    1,
+                    1,
+                    3
+                ],
+                [
+                    34,
+                    "2022-07-16 07:35:51.730022",
+                    "5",
+                    "sneanu@gmail.com",
+                    "",
+                    1,
+                    1,
+                    3
+                ],
+                [
+                    35,
+                    "2022-07-16 07:35:51.868918",
+                    "4",
+                    "sdvdsbvsdvbs@gmail.com",
+                    "",
+                    1,
+                    1,
+                    3
+                ],
+                [
+                    36,
+                    "2022-07-16 07:55:44.889342",
+                    "12",
+                    "b@gmail.com",
+                    "",
+                    1,
+                    1,
+                    3
+                ],
+                [
+                    37,
+                    "2022-07-16 07:59:12.865276",
+                    "11",
+                    "d@gmail.com",
+                    "[{\"changed\": {\"fields\": [\"Is active\"]}}]",
+                    1,
+                    1,
+                    2
+                ],
+                [
+                    38,
+                    "2022-07-16 07:59:18.667086",
+                    "10",
+                    "c@gmail.com",
+                    "[{\"changed\": {\"fields\": [\"Is active\"]}}]",
+                    1,
+                    1,
+                    2
+                ],
+                [
+                    39,
+                    "2022-07-16 07:59:25.090660",
+                    "13",
+                    "b@gmail.com",
+                    "[{\"changed\": {\"fields\": [\"Is active\"]}}]",
+                    1,
+                    1,
+                    2
+                ],
+                [
+                    40,
+                    "2022-07-16 15:43:29.143183",
+                    "15",
+                    "somvitmaity@gmail.com",
+                    "",
+                    1,
+                    1,
+                    3
+                ],
+                [
+                    41,
+                    "2022-07-16 15:43:29.269311",
+                    "14",
+                    "e@gmail.com",
+                    "",
+                    1,
+                    1,
+                    3
+                ],
+                [
+                    42,
+                    "2022-07-16 15:58:32.571136",
+                    "16",
+                    "somvitmaity@gmail.com",
+                    "",
+                    1,
+                    1,
+                    3
+                ],
+                [
+                    43,
+                    "2022-07-16 16:40:09.194286",
+                    "17",
+                    "somvitmaity@gmail.com",
+                    "[{\"changed\": {\"fields\": [\"Is active\"]}}]",
+                    1,
+                    1,
+                    2
+                ],
+                [
+                    44,
+                    "2022-07-16 16:40:37.563686",
+                    "17",
+                    "somvitmaity@gmail.com",
+                    "",
+                    1,
+                    1,
+                    3
+                ],
+                [
+                    45,
+                    "2022-07-16 16:44:17.931827",
+                    "18",
+                    "somvitmaity@gmail.com",
+                    "",
+                    1,
+                    1,
+                    3
+                ],
+                [
+                    46,
+                    "2022-07-16 16:52:25.091183",
+                    "20",
+                    "somvitmaity@gmail.com",
+                    "",
+                    1,
+                    1,
+                    3
+                ],
+                [
+                    47,
+                    "2022-07-16 16:52:32.133253",
+                    "19",
+                    "e@gmail.com",
+                    "",
+                    1,
+                    1,
+                    3
+                ],
+                [
+                    48,
+                    "2022-07-16 18:28:55.641639",
+                    "21",
+                    "somvitmaity@gmail.com",
+                    "",
+                    1,
+                    1,
+                    3
+                ],
+                [
+                    49,
+                    "2022-07-16 18:52:16.599584",
+                    "4",
+                    "Shirts",
+                    "[{\"added\": {}}]",
+                    2,
+                    1,
+                    1
+                ],
+                [
+                    50,
+                    "2022-07-16 18:52:36.565068",
+                    "5",
+                    "Shoes",
+                    "[{\"added\": {}}]",
+                    2,
+                    1,
+                    1
+                ],
+                [
+                    51,
+                    "2022-07-16 18:52:56.211949",
+                    "6",
+                    "Tshirts",
+                    "[{\"added\": {}}]",
+                    2,
+                    1,
+                    1
+                ],
+                [
+                    52,
+                    "2022-07-16 18:54:34.890114",
+                    "3",
+                    "Blue shirt",
+                    "[{\"added\": {}}]",
+                    8,
+                    1,
+                    1
+                ],
+                [
+                    53,
+                    "2022-07-16 18:56:20.191489",
+                    "4",
+                    "Great Tshirt",
+                    "[{\"added\": {}}]",
+                    8,
+                    1,
+                    1
+                ],
+                [
+                    54,
+                    "2022-07-16 18:57:25.063042",
+                    "5",
+                    "Wrangler",
+                    "[{\"added\": {}}]",
+                    8,
+                    1,
+                    1
+                ],
+                [
+                    55,
+                    "2022-07-16 18:58:09.670603",
+                    "6",
+                    "Lee Jeans",
+                    "[{\"added\": {}}]",
+                    8,
+                    1,
+                    1
+                ],
+                [
+                    56,
+                    "2022-07-16 18:59:34.539788",
+                    "7",
+                    "Calvin Klein",
+                    "[{\"added\": {}}]",
+                    8,
+                    1,
+                    1
+                ],
+                [
+                    57,
+                    "2022-07-16 19:02:21.133648",
+                    "8",
+                    "Jordan True Flight Basketball Shoes",
+                    "[{\"added\": {}}]",
+                    8,
+                    1,
+                    1
+                ],
+                [
+                    58,
+                    "2022-07-16 19:07:50.195972",
+                    "9",
+                    "Mavi_jeans",
+                    "[{\"added\": {}}]",
+                    8,
+                    1,
+                    1
+                ],
+                [
+                    59,
+                    "2022-07-16 19:12:08.968617",
+                    "10",
+                    "PumanFerrari Shoes",
+                    "[{\"added\": {}}]",
+                    8,
+                    1,
+                    1
+                ],
+                [
+                    60,
+                    "2022-07-16 19:13:19.757345",
+                    "11",
+                    "Wrangler Shirt",
+                    "[{\"added\": {}}]",
+                    8,
+                    1,
+                    1
+                ],
+                [
+                    61,
+                    "2022-07-23 19:53:04.586622",
+                    "69",
+                    "CartItem object (69)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    62,
+                    "2022-07-23 19:53:05.005229",
+                    "68",
+                    "CartItem object (68)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    63,
+                    "2022-07-23 19:53:05.175257",
+                    "67",
+                    "CartItem object (67)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    64,
+                    "2022-07-23 19:53:05.326847",
+                    "66",
+                    "CartItem object (66)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    65,
+                    "2022-07-23 19:53:05.460491",
+                    "65",
+                    "CartItem object (65)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    66,
+                    "2022-07-23 19:53:05.594133",
+                    "64",
+                    "CartItem object (64)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    67,
+                    "2022-07-23 19:53:05.738746",
+                    "63",
+                    "CartItem object (63)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    68,
+                    "2022-07-23 19:53:05.896324",
+                    "61",
+                    "CartItem object (61)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    69,
+                    "2022-07-23 19:53:06.049388",
+                    "60",
+                    "CartItem object (60)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    70,
+                    "2022-07-23 19:53:06.171061",
+                    "59",
+                    "CartItem object (59)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    71,
+                    "2022-07-23 19:53:06.301865",
+                    "53",
+                    "CartItem object (53)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    72,
+                    "2022-07-23 19:53:06.449466",
+                    "52",
+                    "CartItem object (52)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    73,
+                    "2022-07-23 19:53:06.596084",
+                    "51",
+                    "CartItem object (51)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    74,
+                    "2022-07-23 19:53:06.728725",
+                    "50",
+                    "CartItem object (50)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    75,
+                    "2022-07-23 19:53:06.871341",
+                    "49",
+                    "CartItem object (49)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    76,
+                    "2022-07-23 19:53:07.006035",
+                    "48",
+                    "CartItem object (48)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    77,
+                    "2022-07-23 19:53:07.138679",
+                    "47",
+                    "CartItem object (47)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    78,
+                    "2022-07-23 19:53:07.284290",
+                    "44",
+                    "CartItem object (44)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    79,
+                    "2022-07-23 19:53:07.416012",
+                    "43",
+                    "CartItem object (43)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    80,
+                    "2022-07-23 19:53:07.545743",
+                    "41",
+                    "CartItem object (41)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    81,
+                    "2022-07-23 19:53:07.684372",
+                    "39",
+                    "CartItem object (39)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    82,
+                    "2022-07-23 19:53:07.818071",
+                    "36",
+                    "CartItem object (36)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    83,
+                    "2022-07-23 19:53:07.957694",
+                    "33",
+                    "CartItem object (33)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    84,
+                    "2022-07-23 19:53:08.105299",
+                    "31",
+                    "CartItem object (31)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    85,
+                    "2022-07-23 19:53:08.238942",
+                    "14",
+                    "CartItem object (14)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    86,
+                    "2022-07-23 19:55:54.358423",
+                    "16",
+                    "l51drpogahc6posr7n5alopz5v7vxg3d",
+                    "",
+                    9,
+                    2,
+                    3
+                ],
+                [
+                    87,
+                    "2022-07-23 19:55:54.783127",
+                    "15",
+                    "wmjt3dw6rsb7213ny0sbarbb4av5trjd",
+                    "",
+                    9,
+                    2,
+                    3
+                ],
+                [
+                    88,
+                    "2022-07-23 19:55:54.948061",
+                    "14",
+                    "uemsvw0p07gjfva5sn06t188vnhpj73d",
+                    "",
+                    9,
+                    2,
+                    3
+                ],
+                [
+                    89,
+                    "2022-07-23 19:55:55.088741",
+                    "13",
+                    "ioid3e4dihqstgz070vqecmhpw7dmgz1",
+                    "",
+                    9,
+                    2,
+                    3
+                ],
+                [
+                    90,
+                    "2022-07-23 19:55:55.233354",
+                    "12",
+                    "zchnzkdmbkwfd2jxirwe3tfdlw5lxo2k",
+                    "",
+                    9,
+                    2,
+                    3
+                ],
+                [
+                    91,
+                    "2022-07-23 19:55:55.376055",
+                    "11",
+                    "5tevqazm0fd6yqhght9u2vfjaw3hdyuf",
+                    "",
+                    9,
+                    2,
+                    3
+                ],
+                [
+                    92,
+                    "2022-07-23 19:55:55.522662",
+                    "10",
+                    "oxbrhbjb40rwk5n3l0a7qpryaxk37qsc",
+                    "",
+                    9,
+                    2,
+                    3
+                ],
+                [
+                    93,
+                    "2022-07-23 19:55:55.666014",
+                    "9",
+                    "d4nugldx0is2x6v5sryb2hvnxll1xfs1",
+                    "",
+                    9,
+                    2,
+                    3
+                ],
+                [
+                    94,
+                    "2022-07-23 19:55:55.821921",
+                    "8",
+                    "qb67hnmvvqfr04yi28swzf0y0kgpxjpq",
+                    "",
+                    9,
+                    2,
+                    3
+                ],
+                [
+                    95,
+                    "2022-07-23 19:55:55.944593",
+                    "7",
+                    "tpinzn58x193jptwb4j60vkophp3cis3",
+                    "",
+                    9,
+                    2,
+                    3
+                ],
+                [
+                    96,
+                    "2022-07-23 19:55:56.066311",
+                    "6",
+                    "vjk4q41dgk731b10800e25tu0nda9fgy",
+                    "",
+                    9,
+                    2,
+                    3
+                ],
+                [
+                    97,
+                    "2022-07-23 19:55:56.214816",
+                    "5",
+                    "p38lzitypj3g1gyh921ml6vttwxrta3o",
+                    "",
+                    9,
+                    2,
+                    3
+                ],
+                [
+                    98,
+                    "2022-07-23 19:55:56.366482",
+                    "4",
+                    "17vuha3sm2ackksz0bkn7tev2lmrf37c",
+                    "",
+                    9,
+                    2,
+                    3
+                ],
+                [
+                    99,
+                    "2022-07-23 19:55:56.480177",
+                    "3",
+                    "fipg4msf5842kze41c3dd1g32rlmv0vn",
+                    "",
+                    9,
+                    2,
+                    3
+                ],
+                [
+                    100,
+                    "2022-07-23 19:55:56.611826",
+                    "2",
+                    "y0vbpfecqyed0gsvuakffw5muvv6rzeo",
+                    "",
+                    9,
+                    2,
+                    3
+                ],
+                [
+                    101,
+                    "2022-07-23 19:55:56.753489",
+                    "1",
+                    "1z39tl9j03nlgwcnwqgl2nwmldwg9uvh",
+                    "",
+                    9,
+                    2,
+                    3
+                ],
+                [
+                    102,
+                    "2022-07-23 19:56:04.766822",
+                    "72",
+                    "CartItem object (72)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    103,
+                    "2022-07-23 19:56:04.923578",
+                    "71",
+                    "CartItem object (71)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    104,
+                    "2022-07-23 19:56:05.096262",
+                    "70",
+                    "CartItem object (70)",
+                    "",
+                    10,
+                    2,
+                    3
+                ],
+                [
+                    105,
+                    "2022-07-26 16:18:47.152370",
+                    "8",
+                    "1CH52081AV643363J",
+                    "",
+                    12,
+                    2,
+                    3
+                ],
+                [
+                    106,
+                    "2022-07-26 16:18:47.311381",
+                    "7",
+                    "6YH91962B65336509",
+                    "",
+                    12,
+                    2,
+                    3
+                ],
+                [
+                    107,
+                    "2022-07-26 16:18:47.471141",
+                    "6",
+                    "6U096345W4030662T",
+                    "",
+                    12,
+                    2,
+                    3
+                ],
+                [
+                    108,
+                    "2022-07-26 16:18:47.618586",
+                    "5",
+                    "80A49574SU743652F",
+                    "",
+                    12,
+                    2,
+                    3
+                ],
+                [
+                    109,
+                    "2022-07-26 16:18:47.783341",
+                    "4",
+                    "6N477079HT6453716",
+                    "",
+                    12,
+                    2,
+                    3
+                ],
+                [
+                    110,
+                    "2022-07-26 16:18:47.950758",
+                    "3",
+                    "2CJ72427LT958704M",
+                    "",
+                    12,
+                    2,
+                    3
+                ],
+                [
+                    111,
+                    "2022-07-26 16:18:48.114076",
+                    "2",
+                    "87128271CK833192E",
+                    "",
+                    12,
+                    2,
+                    3
+                ],
+                [
+                    112,
+                    "2022-07-26 16:18:48.261925",
+                    "1",
+                    "93T9432124685882J",
+                    "",
+                    12,
+                    2,
+                    3
+                ],
+                [
+                    113,
+                    "2022-07-26 16:18:55.390219",
+                    "4",
+                    "US-Polo-Assn_Jacket",
+                    "",
+                    13,
+                    2,
+                    3
+                ],
+                [
+                    114,
+                    "2022-07-26 16:18:55.529097",
+                    "3",
+                    "Levis",
+                    "",
+                    13,
+                    2,
+                    3
+                ],
+                [
+                    115,
+                    "2022-07-26 16:18:55.693947",
+                    "2",
+                    "US-Polo-Assn_Jacket",
+                    "",
+                    13,
+                    2,
+                    3
+                ],
+                [
+                    116,
+                    "2022-07-26 16:18:55.851778",
+                    "1",
+                    "Levis",
+                    "",
+                    13,
+                    2,
+                    3
+                ],
+                [
+                    117,
+                    "2022-07-26 16:19:04.276925",
+                    "24",
+                    "Somvit",
+                    "",
+                    14,
+                    2,
+                    3
+                ],
+                [
+                    118,
+                    "2022-07-26 16:19:04.420120",
+                    "23",
+                    "Somvit",
+                    "",
+                    14,
+                    2,
+                    3
+                ],
+                [
+                    119,
+                    "2022-07-26 16:19:04.563883",
+                    "22",
+                    "Somvit",
+                    "",
+                    14,
+                    2,
+                    3
+                ],
+                [
+                    120,
+                    "2022-07-26 16:19:04.712406",
+                    "21",
+                    "Somvit",
+                    "",
+                    14,
+                    2,
+                    3
+                ],
+                [
+                    121,
+                    "2022-07-26 16:19:04.860737",
+                    "20",
+                    "Somvit",
+                    "",
+                    14,
+                    2,
+                    3
+                ],
+                [
+                    122,
+                    "2022-07-26 16:19:05.043872",
+                    "19",
+                    "Somvit",
+                    "",
+                    14,
+                    2,
+                    3
+                ],
+                [
+                    123,
+                    "2022-07-26 16:19:05.185336",
+                    "18",
+                    "Somvit",
+                    "",
+                    14,
+                    2,
+                    3
+                ],
+                [
+                    124,
+                    "2022-07-26 16:19:05.319026",
+                    "17",
+                    "Somvit",
+                    "",
+                    14,
+                    2,
+                    3
+                ],
+                [
+                    125,
+                    "2022-07-26 16:19:05.474420",
+                    "16",
+                    "Somvit",
+                    "",
+                    14,
+                    2,
+                    3
+                ],
+                [
+                    126,
+                    "2022-07-26 16:19:05.651304",
+                    "15",
+                    "Somvit",
+                    "",
+                    14,
+                    2,
+                    3
+                ],
+                [
+                    127,
+                    "2022-07-26 16:19:05.798030",
+                    "14",
+                    "Somvit",
+                    "",
+                    14,
+                    2,
+                    3
+                ],
+                [
+                    128,
+                    "2022-07-26 16:19:05.997484",
+                    "13",
+                    "Somvit",
+                    "",
+                    14,
+                    2,
+                    3
+                ],
+                [
+                    129,
+                    "2022-07-26 16:19:06.152768",
+                    "12",
+                    "Somvit",
+                    "",
+                    14,
+                    2,
+                    3
+                ],
+                [
+                    130,
+                    "2022-07-26 16:19:06.329923",
+                    "11",
+                    "Somvit",
+                    "",
+                    14,
+                    2,
+                    3
+                ],
+                [
+                    131,
+                    "2022-07-26 16:19:06.485337",
+                    "10",
+                    "Somvit",
+                    "",
+                    14,
+                    2,
+                    3
+                ],
+                [
+                    132,
+                    "2022-07-26 16:19:06.666354",
+                    "9",
+                    "Somvit",
+                    "",
+                    14,
+                    2,
+                    3
+                ],
+                [
+                    133,
+                    "2022-07-26 16:19:06.809796",
+                    "8",
+                    "Somvit",
+                    "",
+                    14,
+                    2,
+                    3
+                ],
+                [
+                    134,
+                    "2022-07-26 16:19:06.952263",
+                    "7",
+                    "Somvit",
+                    "",
+                    14,
+                    2,
+                    3
+                ],
+                [
+                    135,
+                    "2022-07-26 16:19:07.109793",
+                    "6",
+                    "Somvit",
+                    "",
+                    14,
+                    2,
+                    3
+                ],
+                [
+                    136,
+                    "2022-07-26 16:19:07.240342",
+                    "5",
+                    "Somvit",
+                    "",
+                    14,
+                    2,
+                    3
+                ],
+                [
+                    137,
+                    "2022-07-26 16:19:31.211683",
+                    "21",
+                    "dmttv2agwgp51f50fpx7abxoim3l6jbh",
+                    "",
+                    9,
+                    2,
+                    3
+                ],
+                [
+                    138,
+                    "2022-07-26 16:19:31.392634",
+                    "20",
+                    "0tpob641i79udcqbqw3zxvvuew6u0sbs",
+                    "",
+                    9,
+                    2,
+                    3
+                ],
+                [
+                    139,
+                    "2022-07-26 16:19:31.563214",
+                    "19",
+                    "dqep8nrhe2m4jygeb12oifvi1z2rpr7l",
+                    "",
+                    9,
+                    2,
+                    3
+                ],
+                [
+                    140,
+                    "2022-07-26 16:19:31.722017",
+                    "18",
+                    "wfj4lwbecbnkl6rs1fh3fdfhxbz95ela",
+                    "",
+                    9,
+                    2,
+                    3
+                ],
+                [
+                    141,
+                    "2022-07-26 16:19:31.876373",
+                    "17",
+                    "3d87pphsx376v9r1wejmezbamo4n4nen",
+                    "",
+                    9,
+                    2,
+                    3
+                ],
+                [
+                    142,
+                    "2022-08-05 18:44:30.589069",
+                    "3",
+                    "test",
+                    "[]",
+                    15,
+                    2,
+                    2
+                ],
+                [
+                    143,
+                    "2022-08-05 18:45:19.959276",
+                    "4",
+                    "Review",
+                    "[{\"added\": {}}]",
+                    15,
+                    2,
+                    1
+                ],
+                [
+                    144,
+                    "2022-08-05 18:45:47.267734",
+                    "5",
+                    "Review",
+                    "[{\"added\": {}}]",
+                    15,
+                    2,
+                    1
+                ],
+                [
+                    145,
+                    "2022-08-05 18:46:12.173274",
+                    "6",
+                    "Review",
+                    "[{\"added\": {}}]",
+                    15,
+                    2,
+                    1
+                ],
+                [
+                    146,
+                    "2022-08-05 18:47:13.753938",
+                    "7",
+                    "Review",
+                    "[{\"added\": {}}]",
+                    15,
+                    2,
+                    1
+                ],
+                [
+                    147,
+                    "2022-08-05 20:55:03.861551",
+                    "1",
+                    "b",
+                    "[{\"added\": {}}]",
+                    16,
+                    2,
+                    1
+                ],
+                [
+                    148,
+                    "2022-08-05 20:55:12.059527",
+                    "1",
+                    "b",
+                    "",
+                    16,
+                    2,
+                    3
+                ],
+                [
+                    149,
+                    "2022-08-05 21:36:24.922882",
+                    "2",
+                    "b",
+                    "[{\"added\": {}}]",
+                    16,
+                    2,
+                    1
+                ],
+                [
+                    150,
+                    "2022-08-05 21:48:52.716723",
+                    "2",
+                    "b",
+                    "[{\"changed\": {\"fields\": [\"Profile picture\"]}}]",
+                    16,
+                    2,
+                    2
+                ],
+                [
+                    151,
+                    "2022-08-06 12:42:35.252196",
+                    "23",
+                    "n@gmail.com",
+                    "[{\"changed\": {\"fields\": [\"Is active\"]}}]",
+                    1,
+                    2,
+                    2
+                ],
+                [
+                    152,
+                    "2022-08-06 16:10:31.811142",
+                    "1",
+                    "US-Polo-Assn_Jacket",
+                    "[{\"added\": {}}]",
+                    17,
+                    2,
+                    1
+                ],
+                [
+                    153,
+                    "2022-08-06 16:10:42.439397",
+                    "1",
+                    "US-Polo-Assn_Jacket",
+                    "",
+                    17,
+                    2,
+                    3
+                ],
+                [
+                    154,
+                    "2022-08-06 16:25:49.224329",
+                    "11",
+                    "Wrangler Shirt",
+                    "[{\"added\": {\"name\": \"ProductGalleryModel\", \"object\": \"Wrangler Shirt\"}}]",
+                    8,
+                    2,
+                    2
+                ],
+                [
+                    155,
+                    "2022-08-06 16:26:52.291549",
+                    "11",
+                    "Wrangler Shirt",
+                    "[{\"deleted\": {\"name\": \"ProductGalleryModel\", \"object\": \"Wrangler Shirt\"}}]",
+                    8,
+                    2,
+                    2
+                ],
+                [
+                    156,
+                    "2022-08-06 16:27:19.079504",
+                    "11",
+                    "Wrangler Shirt",
+                    "[{\"added\": {\"name\": \"ProductGalleryModel\", \"object\": \"Wrangler Shirt\"}}]",
+                    8,
+                    2,
+                    2
+                ],
+                [
+                    157,
+                    "2022-08-06 16:41:11.767596",
+                    "1",
+                    "US-Polo-Assn_Jacket",
+                    "[{\"added\": {\"name\": \"ProductGalleryModel\", \"object\": \"US-Polo-Assn_Jacket\"}}]",
+                    8,
+                    2,
+                    2
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "django_content_type",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"django_content_type\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"app_label\" varchar(100) NOT NULL, \"model\" varchar(100) NOT NULL)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "app_label",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "model",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    "accounts",
+                    "accounts"
+                ],
+                [
+                    2,
+                    "category",
+                    "category"
+                ],
+                [
+                    3,
+                    "admin",
+                    "logentry"
+                ],
+                [
+                    4,
+                    "auth",
+                    "permission"
+                ],
+                [
+                    5,
+                    "auth",
+                    "group"
+                ],
+                [
+                    6,
+                    "contenttypes",
+                    "contenttype"
+                ],
+                [
+                    7,
+                    "sessions",
+                    "session"
+                ],
+                [
+                    8,
+                    "store",
+                    "product"
+                ],
+                [
+                    9,
+                    "carts",
+                    "cart"
+                ],
+                [
+                    10,
+                    "carts",
+                    "cartitem"
+                ],
+                [
+                    11,
+                    "store",
+                    "variationmodel"
+                ],
+                [
+                    12,
+                    "Order",
+                    "payment"
+                ],
+                [
+                    13,
+                    "Order",
+                    "order_product"
+                ],
+                [
+                    14,
+                    "Order",
+                    "order"
+                ],
+                [
+                    15,
+                    "store",
+                    "reviewrating"
+                ],
+                [
+                    16,
+                    "accounts",
+                    "userprofile"
+                ],
+                [
+                    17,
+                    "store",
+                    "productgallerymodel"
+                ],
+                [
+                    18,
+                    "admin_honeypot",
+                    "loginattempt"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "django_migrations",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"django_migrations\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"app\" varchar(255) NOT NULL, \"name\" varchar(255) NOT NULL, \"applied\" datetime NOT NULL)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "app",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "name",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "applied",
+                    "type": "datetime",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    "accounts",
+                    "0001_initial",
+                    "2022-06-21 16:55:41.603405"
+                ],
+                [
+                    2,
+                    "contenttypes",
+                    "0001_initial",
+                    "2022-06-21 16:55:41.776651"
+                ],
+                [
+                    3,
+                    "admin",
+                    "0001_initial",
+                    "2022-06-21 16:55:42.071091"
+                ],
+                [
+                    4,
+                    "admin",
+                    "0002_logentry_remove_auto_add",
+                    "2022-06-21 16:55:42.255675"
+                ],
+                [
+                    5,
+                    "admin",
+                    "0003_logentry_add_action_flag_choices",
+                    "2022-06-21 16:55:42.400867"
+                ],
+                [
+                    6,
+                    "contenttypes",
+                    "0002_remove_content_type_name",
+                    "2022-06-21 16:55:42.564256"
+                ],
+                [
+                    7,
+                    "auth",
+                    "0001_initial",
+                    "2022-06-21 16:55:42.855515"
+                ],
+                [
+                    8,
+                    "auth",
+                    "0002_alter_permission_name_max_length",
+                    "2022-06-21 16:55:43.023919"
+                ],
+                [
+                    9,
+                    "auth",
+                    "0003_alter_user_email_max_length",
+                    "2022-06-21 16:55:43.170043"
+                ],
+                [
+                    10,
+                    "auth",
+                    "0004_alter_user_username_opts",
+                    "2022-06-21 16:55:43.314204"
+                ],
+                [
+                    11,
+                    "auth",
+                    "0005_alter_user_last_login_null",
+                    "2022-06-21 16:55:43.459711"
+                ],
+                [
+                    12,
+                    "auth",
+                    "0006_require_contenttypes_0002",
+                    "2022-06-21 16:55:43.590829"
+                ],
+                [
+                    13,
+                    "auth",
+                    "0007_alter_validators_add_error_messages",
+                    "2022-06-21 16:55:43.735022"
+                ],
+                [
+                    14,
+                    "auth",
+                    "0008_alter_user_username_max_length",
+                    "2022-06-21 16:55:43.880123"
+                ],
+                [
+                    15,
+                    "auth",
+                    "0009_alter_user_last_name_max_length",
+                    "2022-06-21 16:55:44.024607"
+                ],
+                [
+                    16,
+                    "auth",
+                    "0010_alter_group_name_max_length",
+                    "2022-06-21 16:55:44.181113"
+                ],
+                [
+                    17,
+                    "auth",
+                    "0011_update_proxy_permissions",
+                    "2022-06-21 16:55:44.336639"
+                ],
+                [
+                    18,
+                    "auth",
+                    "0012_alter_user_first_name_max_length",
+                    "2022-06-21 16:55:44.480320"
+                ],
+                [
+                    19,
+                    "category",
+                    "0001_initial",
+                    "2022-06-21 16:55:44.623380"
+                ],
+                [
+                    20,
+                    "sessions",
+                    "0001_initial",
+                    "2022-06-21 16:55:44.898404"
+                ],
+                [
+                    21,
+                    "accounts",
+                    "0002_alter_accounts_options",
+                    "2022-06-21 17:49:10.317213"
+                ],
+                [
+                    22,
+                    "category",
+                    "0002_alter_category_slug",
+                    "2022-06-21 18:39:06.060165"
+                ],
+                [
+                    23,
+                    "accounts",
+                    "0003_auto_20220705_2211",
+                    "2022-07-05 18:47:30.346483"
+                ],
+                [
+                    24,
+                    "category",
+                    "0003_auto_20220705_2211",
+                    "2022-07-05 18:47:30.530691"
+                ],
+                [
+                    25,
+                    "store",
+                    "0001_initial",
+                    "2022-07-05 18:47:30.670348"
+                ],
+                [
+                    26,
+                    "store",
+                    "0002_auto_20220705_2211",
+                    "2022-07-05 18:47:30.842820"
+                ],
+                [
+                    27,
+                    "accounts",
+                    "0004_alter_accounts_id",
+                    "2022-07-09 16:34:26.903821"
+                ],
+                [
+                    28,
+                    "store",
+                    "0002_alter_product_id",
+                    "2022-07-09 16:34:27.056413"
+                ],
+                [
+                    29,
+                    "carts",
+                    "0001_initial",
+                    "2022-07-09 16:34:27.383539"
+                ],
+                [
+                    30,
+                    "category",
+                    "0002_alter_category_id",
+                    "2022-07-09 16:34:27.532932"
+                ],
+                [
+                    31,
+                    "carts",
+                    "0002_alter_cart_options",
+                    "2022-07-09 16:39:10.885528"
+                ],
+                [
+                    32,
+                    "carts",
+                    "0003_alter_cartitem_options",
+                    "2022-07-09 16:41:06.169320"
+                ],
+                [
+                    33,
+                    "store",
+                    "0003_variationmodel",
+                    "2022-07-13 14:39:19.784610"
+                ],
+                [
+                    34,
+                    "carts",
+                    "0004_cartitem_variations",
+                    "2022-07-13 17:08:34.073713"
+                ],
+                [
+                    35,
+                    "store",
+                    "0004_alter_variationmodel_variation_category",
+                    "2022-07-14 19:27:00.515493"
+                ],
+                [
+                    36,
+                    "carts",
+                    "0005_cartitem_user_alter_cartitem_cart",
+                    "2022-07-21 19:37:58.270564"
+                ],
+                [
+                    37,
+                    "Order",
+                    "0001_initial",
+                    "2022-07-25 12:37:15.092774"
+                ],
+                [
+                    38,
+                    "Order",
+                    "0002_remove_order_product_color_remove_order_product_size",
+                    "2022-07-26 11:00:00.056265"
+                ],
+                [
+                    39,
+                    "Order",
+                    "0003_remove_order_product_variation_and_more",
+                    "2022-07-26 16:04:24.212907"
+                ],
+                [
+                    40,
+                    "store",
+                    "0005_reviewrating",
+                    "2022-07-27 18:47:49.076144"
+                ],
+                [
+                    41,
+                    "Order",
+                    "0004_alter_order_product_variations",
+                    "2022-07-27 18:47:49.269540"
+                ],
+                [
+                    42,
+                    "accounts",
+                    "0005_userprofile",
+                    "2022-08-05 20:52:05.807819"
+                ],
+                [
+                    43,
+                    "store",
+                    "0006_productgallerymodel",
+                    "2022-08-06 16:09:04.269216"
+                ],
+                [
+                    44,
+                    "admin_honeypot",
+                    "0001_initial",
+                    "2022-08-06 18:33:59.892615"
+                ],
+                [
+                    45,
+                    "admin_honeypot",
+                    "0002_auto_20160208_0854",
+                    "2022-08-06 18:34:00.128503"
+                ],
+                [
+                    46,
+                    "admin_honeypot",
+                    "0003_alter_loginattempt_id",
+                    "2022-08-06 18:35:22.386088"
+                ],
+                [
+                    47,
+                    "store",
+                    "0007_alter_productgallerymodel_options",
+                    "2022-08-06 18:35:22.606675"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "django_session",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"django_session\" (\"session_key\" varchar(40) NOT NULL PRIMARY KEY, \"session_data\" text NOT NULL, \"expire_date\" datetime NOT NULL)",
+            "columns": [
+                {
+                    "name": "session_key",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY"
+                        }
+                    ]
+                },
+                {
+                    "name": "session_data",
+                    "type": "text",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "expire_date",
+                    "type": "datetime",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    "pr4dxpecumqax5on456l2p5am2o4aav9",
+                    ".eJxVjDsOwjAQBe_iGln-LHFMSZ8zWJvdNQ4gR4qTCnF3iJQC2jcz76USbmtJW5MlTawuyqnT7zYiPaTugO9Yb7Omua7LNOpd0QdtephZntfD_Tso2Mq3FgiZTAc-uwAZEQXFQ0DoMXK2pvddDuSJMsSzEc9oHcfoXQjAZJ16fwD9mTg0:1o3hy9:9fXZJnvqpo8poYIjDEc2gT7VVkQcCakV4v7LJgIPgM0",
+                    "2022-07-05 17:47:17.880114"
+                ],
+                [
+                    "bm5phq2d3wp0118uuwb5clt1mulfiih5",
+                    ".eJxVjMEOgjAQRP-lZ9PYbQvo0TvfQHa7uxY1kFA4Gf_dknDQ48x7M28z4LbmYSuyDCObq_Hm9NsRpqdMO-AHTvfZpnlal5HsrtiDFtvPLK_b4f4dZCy5rgm9UnDK7tKAIDYtoI_SdRRjqKhV1iBnAaeRakqqHhMBA6N30JnPFxE8OUQ:1o9Udy:mZkXNYwO5Ccz1YtVdrwv6ohImPINSgi3H2JS3gTBdkM",
+                    "2022-07-21 16:46:22.942777"
+                ],
+                [
+                    "fmhyvjzisopjuyrgp6c9o7xj99u04ewi",
+                    ".eJxVjMsOwiAQRf-FtSE8OsK4dN9vaIAZpGogKe3K-O_apAvd3nPOfYkpbGuZts7LNJO4CC1Ov1sM6cF1B3QP9dZkanVd5ih3RR60y7ERP6-H-3dQQi_fGhKqswUmpQbjiQEgs09eG6uMCphAO8zZZQ2EziBQBgdDZEBrPRvx_gDDRjcA:1oC76w:CIQ1i0Bxrqr5HaLOnS6zxVjC_W-ZxBJoUnFzZniCDDc",
+                    "2022-07-28 22:15:06.214129"
+                ],
+                [
+                    "3emhkf96fbbkwwldx23boxv3q7oir57x",
+                    "e30:1oDsFq:XRgZhmGrr4z8isWZOa8m--uV1bQfVY0BscQr_juBt7Q",
+                    "2022-08-02 18:47:34.630361"
+                ],
+                [
+                    "zxqnylmu52mmfzc2xuljhq5zzjmtanzh",
+                    ".eJxVjLEOgjAYhN-ls2mgFlvcZHd0Jn97fwUlbUIhDsZ3tyQMutxwd9_3Fj2ty9Cvmed-hDgLpcTht3Tknxy3BQ-K9yR9iss8Orld5L5meZmm9CpxK0y-JvDU7eCfbaA8FBV5ewqNtZbqSkOB4YhReWUQYIBAZG1rqAk6uJa4VuboQkEApSvXiM8Xvak-5w:1oEcFu:eEKwu0yeyjvz5_8oiAuMB87YfO550gW0Jr6HAGYyqj4",
+                    "2022-08-04 19:54:42.040406"
+                ],
+                [
+                    "sog3k20wy1790ynp97paxw5bp073pd75",
+                    ".eJxVjD0PgjAURf9LZ9OUftG6ye7oTF55D4uSNqEQB-N_tyQMutzhnnvum_WwrbHfCi39hOzMJDv9dgGGJ6Ud4APSPfMhp3WZAt8n_KCFX-Y5v2rcqlOuGWnuDvHvLUKJ9coLN2rSroXGSkWkKKBWJFGP2Hg3gG-NsY0RIFGS0m40ZKVRdS-sQsM-X06IPHQ:1oGN5s:6omJsafMLoYeH38Kq62EcQTgSaBasVfqYY3Z9F1lbXQ",
+                    "2022-08-09 16:07:36.161027"
+                ],
+                [
+                    "tjkbulm410ev5bchmem5o5y5o1m1iyz5",
+                    ".eJxVjD0PgjAURf9LZ9PQRz8ebrI7OpO-PiooaRMKcTD-dyFh0OUO995z3qLz6zJ0a-nnbmRxFgDi9FuSD88-7Qs_fLpnGXJa5pHkfpHHWuRlmvJri9vGlGvmfmoP8M82-DJsKo1oGSwrxybEyK4C0myBG9egYUDUZLwjq7COzDo2tbJUxVArQwgoPl92kzzt:1oIYzA:Z18mT3TaH0oKERGN4lR9iibTz5VMG5ZYTuNH7BCmeqo",
+                    "2022-08-15 17:13:44.717999"
+                ],
+                [
+                    "cvq6e58e1osqffidq2dwvodeb3xod4jb",
+                    ".eJxVjLsOwjAQBP_FNbIS53VHR3pK6ujss3HAsqU4EQXi33GkFNBssTs7bzHRtvppy3aZZhZnocTpt9NknjbuAz8o3pM0Ka7LrOWOyGPN8hJCepW4lU--JrZhPI5_Nk_ZFxVoHnrnYOAWWFVE0Bmk1gIRtwZcA6gZtatwIGw6LHSlau6hoKZXtfh8AXf6PXY:1oKMqz:s-DXBfTlZHYieAgyPvq9A-hDWQb-V95YX8UfaxhcFno",
+                    "2022-08-20 16:40:45.197203"
+                ],
+                [
+                    "0c02r0sj1yqf1wf2fo00i65fvq06rldz",
+                    ".eJxVjL0OwiAAhN-F2RB-C7jp7uhM-LVoC6bQOBjfXZp06XK53Hd3X6BrqDWVrFNOTbc0h9rM_NbgjAeuJMaSKygZJVyQE9BmbaNea1h08uAMMAWH0Br3Cnkj_mnyo0BXcluShVsF7rTCyzSVT5d739Rb8WG67sPD22jq2K-ijI6TAVkpHRLEB69kjExwRhXiJCLHBuWs7ZYIbmO0RhqqFFaIkcg4-P0Bdc5LfQ:1oKOt1:q5lH_tjNZuEiYZlwcJ-2uP-EnVx-KFtblO-sR5tzfr8",
+                    "2022-08-20 18:50:59.863239"
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "Order_order",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"Order_order\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"order_number\" varchar(150) NOT NULL, \"first_name\" varchar(150) NOT NULL, \"last_name\" varchar(150) NOT NULL, \"phone\" varchar(150) NOT NULL, \"email\" varchar(250) NOT NULL, \"address_line_1\" varchar(350) NOT NULL, \"address_line_2\" varchar(350) NOT NULL, \"country\" varchar(150) NOT NULL, \"state\" varchar(150) NOT NULL, \"city\" varchar(150) NOT NULL, \"order_total\" real NOT NULL, \"tax\" real NOT NULL, \"status\" varchar(15) NOT NULL, \"ip\" varchar(250) NOT NULL, \"order_note\" varchar(350) NOT NULL, \"is_ordered\" bool NOT NULL, \"created_at\" datetime NOT NULL, \"updated_at\" datetime NOT NULL, \"payment_id\" bigint NULL REFERENCES \"Order_payment\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"user_id\" bigint NULL REFERENCES \"accounts_accounts\" (\"id\") DEFERRABLE INITIALLY DEFERRED)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "order_number",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "first_name",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "last_name",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "phone",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "email",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "address_line_1",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "address_line_2",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "country",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "state",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "city",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "order_total",
+                    "type": "real",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "tax",
+                    "type": "real",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "status",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "ip",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "order_note",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "is_ordered",
+                    "type": "bool",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "created_at",
+                    "type": "datetime",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "updated_at",
+                    "type": "datetime",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "payment_id",
+                    "type": "bigint",
+                    "constraints": [
+                        {
+                            "type": null,
+                            "definition": "NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"Order_payment\" (\"id\") "
+                        }
+                    ]
+                },
+                {
+                    "name": "user_id",
+                    "type": "bigint",
+                    "constraints": [
+                        {
+                            "type": null,
+                            "definition": "NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"accounts_accounts\" (\"id\") "
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    "202207261",
+                    "Somvit",
+                    "Maity",
+                    "+916291646550",
+                    "somvitmaity@gmail.com",
+                    "Jagadishpur Hat, Howrah",
+                    "",
+                    "India",
+                    "West Bengal",
+                    "Howrah",
+                    3066.4775,
+                    67.47749999999999,
+                    "New",
+                    "127.0.0.1",
+                    "dsvdsvdb",
+                    0,
+                    "2022-07-25 18:32:41.749405",
+                    "2022-07-25 18:32:41.921215",
+                    null,
+                    22
+                ],
+                [
+                    2,
+                    "202207262",
+                    "Somvit",
+                    "Maity",
+                    "+916291646550",
+                    "somvitmaity@gmail.com",
+                    "Jagadishpur Hat, Howrah",
+                    "",
+                    "India",
+                    "West Bengal",
+                    "Howrah",
+                    3066.4775,
+                    67.47749999999999,
+                    "New",
+                    "127.0.0.1",
+                    "test",
+                    0,
+                    "2022-07-25 19:27:00.016380",
+                    "2022-07-25 19:27:00.194903",
+                    null,
+                    22
+                ],
+                [
+                    3,
+                    "202207263",
+                    "Somvit",
+                    "Maity",
+                    "+916291646550",
+                    "somvitmaity@gmail.com",
+                    "Jagadishpur Hat, Howrah",
+                    "",
+                    "India",
+                    "West Bengal",
+                    "Howrah",
+                    3066.4775,
+                    67.47749999999999,
+                    "New",
+                    "127.0.0.1",
+                    "test",
+                    0,
+                    "2022-07-25 19:27:26.157720",
+                    "2022-07-25 19:27:26.326239",
+                    null,
+                    22
+                ],
+                [
+                    4,
+                    "202207264",
+                    "Somvit",
+                    "Maity",
+                    "+916291646550",
+                    "somvitmaity@gmail.com",
+                    "Jagadishpur Hat, Howrah",
+                    "",
+                    "India",
+                    "West Bengal",
+                    "Howrah",
+                    3066,
+                    67,
+                    "New",
+                    "127.0.0.1",
+                    "dsfdgsdb",
+                    0,
+                    "2022-07-25 19:29:13.506934",
+                    "2022-07-25 19:29:13.682510",
+                    null,
+                    22
+                ],
+                [
+                    25,
+                    "2022072625",
+                    "Somvit",
+                    "Maity",
+                    "+916291646550",
+                    "somvitmaity@gmail.com",
+                    "Jagadishpur Hat, Howrah",
+                    "",
+                    "India",
+                    "West Bengal",
+                    "Howrah",
+                    5111,
+                    112,
+                    "New",
+                    "127.0.0.1",
+                    "",
+                    1,
+                    "2022-07-26 16:43:48.670911",
+                    "2022-07-26 16:44:21.059812",
+                    9,
+                    22
+                ],
+                [
+                    26,
+                    "2022072626",
+                    "Somvit",
+                    "Maity",
+                    "+916291646550",
+                    "maitysomvit@gmail.com",
+                    "Jagadishpur Hat, Howrah",
+                    "",
+                    "India",
+                    "West Bengal",
+                    "Howrah",
+                    15334,
+                    337,
+                    "New",
+                    "127.0.0.1",
+                    "demo",
+                    1,
+                    "2022-07-26 18:20:31.743335",
+                    "2022-07-26 18:21:01.280894",
+                    10,
+                    22
+                ],
+                [
+                    27,
+                    "2022072727",
+                    "Somvit",
+                    "Maity",
+                    "+916291646550",
+                    "somvitmaity@gmail.com",
+                    "Jagadishpur Hat, Howrah",
+                    "",
+                    "India",
+                    "West Bengal",
+                    "Howrah",
+                    10222,
+                    224,
+                    "New",
+                    "127.0.0.1",
+                    "",
+                    1,
+                    "2022-07-26 18:59:05.324488",
+                    "2022-07-26 18:59:36.729111",
+                    11,
+                    22
+                ],
+                [
+                    28,
+                    "2022072728",
+                    "Somvit",
+                    "Maity",
+                    "+916291646550",
+                    "somvitmaity@gmail.com",
+                    "Jagadishpur Hat, Howrah",
+                    "",
+                    "India",
+                    "West Bengal",
+                    "Howrah",
+                    5111,
+                    112,
+                    "New",
+                    "127.0.0.1",
+                    "",
+                    1,
+                    "2022-07-26 19:15:10.731935",
+                    "2022-07-26 19:15:52.545947",
+                    12,
+                    22
+                ],
+                [
+                    29,
+                    "2022080629",
+                    "Somvit",
+                    "Maity",
+                    "+916291646550",
+                    "somvitmaity@gmail.com",
+                    "Jagadishpur Hat, Howrah",
+                    "",
+                    "India",
+                    "West Bengal",
+                    "Howrah",
+                    5111,
+                    112,
+                    "New",
+                    "127.0.0.1",
+                    "test",
+                    1,
+                    "2022-08-05 20:20:39.587635",
+                    "2022-08-05 20:21:30.134838",
+                    13,
+                    13
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "Order_order_product",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"Order_order_product\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"quantity\" integer NOT NULL, \"product_price\" real NOT NULL, \"is_ordered\" bool NOT NULL, \"created_at\" datetime NOT NULL, \"updated_at\" datetime NOT NULL, \"order_id\" bigint NOT NULL REFERENCES \"Order_order\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"payment_id\" bigint NULL REFERENCES \"Order_payment\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"product_id\" bigint NOT NULL REFERENCES \"store_product\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"user_id\" bigint NOT NULL REFERENCES \"accounts_accounts\" (\"id\") DEFERRABLE INITIALLY DEFERRED)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "quantity",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "product_price",
+                    "type": "real",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "is_ordered",
+                    "type": "bool",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "created_at",
+                    "type": "datetime",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "updated_at",
+                    "type": "datetime",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "order_id",
+                    "type": "bigint",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"Order_order\" (\"id\") "
+                        }
+                    ]
+                },
+                {
+                    "name": "payment_id",
+                    "type": "bigint",
+                    "constraints": [
+                        {
+                            "type": null,
+                            "definition": "NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"Order_payment\" (\"id\") "
+                        }
+                    ]
+                },
+                {
+                    "name": "product_id",
+                    "type": "bigint",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"store_product\" (\"id\") "
+                        }
+                    ]
+                },
+                {
+                    "name": "user_id",
+                    "type": "bigint",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"accounts_accounts\" (\"id\") "
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    5,
+                    1,
+                    4999,
+                    1,
+                    "2022-07-26 16:44:21.227898",
+                    "2022-07-26 16:44:21.607228",
+                    25,
+                    9,
+                    1,
+                    22
+                ],
+                [
+                    6,
+                    3,
+                    4999,
+                    1,
+                    "2022-07-26 18:21:01.482356",
+                    "2022-07-26 18:21:01.807486",
+                    26,
+                    10,
+                    1,
+                    22
+                ],
+                [
+                    7,
+                    2,
+                    4999,
+                    1,
+                    "2022-07-26 18:59:36.926582",
+                    "2022-07-26 18:59:37.290008",
+                    27,
+                    11,
+                    1,
+                    22
+                ],
+                [
+                    8,
+                    1,
+                    4999,
+                    1,
+                    "2022-07-26 19:15:52.775335",
+                    "2022-07-26 19:15:53.087028",
+                    28,
+                    12,
+                    1,
+                    22
+                ],
+                [
+                    9,
+                    1,
+                    4999,
+                    1,
+                    "2022-08-05 20:21:30.259035",
+                    "2022-08-05 20:21:30.509430",
+                    29,
+                    13,
+                    1,
+                    13
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "Order_order_product_variations",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"Order_order_product_variations\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"order_product_id\" bigint NOT NULL REFERENCES \"Order_order_product\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"variationmodel_id\" bigint NOT NULL REFERENCES \"store_variationmodel\" (\"id\") DEFERRABLE INITIALLY DEFERRED)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "order_product_id",
+                    "type": "bigint",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"Order_order_product\" (\"id\") "
+                        }
+                    ]
+                },
+                {
+                    "name": "variationmodel_id",
+                    "type": "bigint",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"store_variationmodel\" (\"id\") "
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    5,
+                    1
+                ],
+                [
+                    2,
+                    5,
+                    3
+                ],
+                [
+                    3,
+                    6,
+                    1
+                ],
+                [
+                    4,
+                    6,
+                    3
+                ],
+                [
+                    5,
+                    7,
+                    9
+                ],
+                [
+                    6,
+                    7,
+                    7
+                ],
+                [
+                    7,
+                    8,
+                    1
+                ],
+                [
+                    8,
+                    8,
+                    3
+                ],
+                [
+                    9,
+                    9,
+                    1
+                ],
+                [
+                    10,
+                    9,
+                    3
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "Order_payment",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"Order_payment\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"payment_id\" varchar(100) NOT NULL, \"payment_method\" varchar(250) NOT NULL, \"amount_paid\" varchar(100) NOT NULL, \"status\" varchar(150) NOT NULL, \"created_at\" datetime NOT NULL, \"user_id\" bigint NOT NULL REFERENCES \"accounts_accounts\" (\"id\") DEFERRABLE INITIALLY DEFERRED)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "payment_id",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "payment_method",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "amount_paid",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "status",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "created_at",
+                    "type": "datetime",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "user_id",
+                    "type": "bigint",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"accounts_accounts\" (\"id\") "
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    9,
+                    "53S255215M138121H",
+                    "PayPal",
+                    "5111.0",
+                    "COMPLETED",
+                    "2022-07-26 16:44:20.873262",
+                    22
+                ],
+                [
+                    10,
+                    "8AS039602L0157107",
+                    "PayPal",
+                    "15334.0",
+                    "COMPLETED",
+                    "2022-07-26 18:21:01.099381",
+                    22
+                ],
+                [
+                    11,
+                    "07428245530625812",
+                    "PayPal",
+                    "10222.0",
+                    "COMPLETED",
+                    "2022-07-26 18:59:36.534632",
+                    22
+                ],
+                [
+                    12,
+                    "1C728850F88949042",
+                    "PayPal",
+                    "5111.0",
+                    "COMPLETED",
+                    "2022-07-26 19:15:52.347488",
+                    22
+                ],
+                [
+                    13,
+                    "8AY95674SN830805S",
+                    "PayPal",
+                    "5111.0",
+                    "COMPLETED",
+                    "2022-08-05 20:21:29.690924",
+                    13
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "store_product",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"store_product\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"product_name\" varchar(250) NOT NULL UNIQUE, \"slug\" varchar(250) NOT NULL UNIQUE, \"description\" text NOT NULL, \"price\" integer NOT NULL, \"images\" varchar(100) NOT NULL, \"stock\" integer NOT NULL, \"is_available\" bool NOT NULL, \"created_date\" datetime NOT NULL, \"modified_date\" datetime NOT NULL, \"category_id\" integer NOT NULL REFERENCES \"category_category\" (\"id\") DEFERRABLE INITIALLY DEFERRED)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "product_name",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "UNIQUE",
+                            "definition": "UNIQUE"
+                        }
+                    ]
+                },
+                {
+                    "name": "slug",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "UNIQUE",
+                            "definition": "UNIQUE"
+                        }
+                    ]
+                },
+                {
+                    "name": "description",
+                    "type": "text",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "price",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "images",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "stock",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "is_available",
+                    "type": "bool",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "created_date",
+                    "type": "datetime",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "modified_date",
+                    "type": "datetime",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "category_id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"category_category\" (\"id\") "
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    "US-Polo-Assn_Jacket",
+                    "Assn_Jacket",
+                    "",
+                    4999,
+                    "photos\/products\/US-Polo-Assn_Jacket_SwjDDVV.jpg",
+                    521,
+                    1,
+                    "2022-07-05 19:20:29.364977",
+                    "2022-08-06 16:41:11.761609",
+                    3
+                ],
+                [
+                    2,
+                    "Levis",
+                    "Levis",
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel elit scelerisque mauris pellentesque pulvinar. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Lectus nulla at volutpat diam ut. Lorem sed risus ultricies tristique. Arcu dictum varius duis at consectetur. Nunc mattis enim ut tellus elementum. Id aliquet lectus proin nibh. Ac ut consequat semper viverra.",
+                    2999,
+                    "photos\/products\/ATX-Jeans_6dhbaMJ.jpg",
+                    450,
+                    1,
+                    "2022-07-05 19:20:58.350545",
+                    "2022-07-09 15:43:08.904125",
+                    2
+                ],
+                [
+                    3,
+                    "Blue shirt",
+                    "blue-shirt",
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    875,
+                    "photos\/products\/Blue-Shirt.jpg",
+                    458,
+                    1,
+                    "2022-07-16 18:54:34.888123",
+                    "2022-07-16 18:54:34.888123",
+                    4
+                ],
+                [
+                    4,
+                    "Great Tshirt",
+                    "great-tshirt",
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    252,
+                    "photos\/products\/Great-Tshirt.jpg",
+                    655,
+                    1,
+                    "2022-07-16 18:56:20.132035",
+                    "2022-07-16 18:56:20.132035",
+                    6
+                ],
+                [
+                    5,
+                    "Wrangler",
+                    "wrangler",
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    412,
+                    "photos\/products\/image1.jpg",
+                    25,
+                    1,
+                    "2022-07-16 18:57:25.060046",
+                    "2022-07-16 18:57:25.060046",
+                    2
+                ],
+                [
+                    6,
+                    "Lee Jeans",
+                    "lee-jeans",
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    125,
+                    "photos\/products\/image2.jpg",
+                    41,
+                    1,
+                    "2022-07-16 18:58:09.666580",
+                    "2022-07-16 18:58:09.666580",
+                    2
+                ],
+                [
+                    7,
+                    "Calvin Klein",
+                    "calvin-klein",
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    365,
+                    "photos\/products\/image13.jpg",
+                    0,
+                    1,
+                    "2022-07-16 18:59:34.536796",
+                    "2022-07-16 18:59:34.536796",
+                    2
+                ],
+                [
+                    8,
+                    "Jordan True Flight Basketball Shoes",
+                    "jordan-true-flight-basketball-shoes",
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    324,
+                    "photos\/products\/jordan-true-flight-basketball-shoes.jpg",
+                    450,
+                    1,
+                    "2022-07-16 19:02:21.126479",
+                    "2022-07-16 19:02:21.126479",
+                    5
+                ],
+                [
+                    9,
+                    "Mavi_jeans",
+                    "mavi_jeans",
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    651,
+                    "photos\/products\/Mavi_jeans.jpg",
+                    0,
+                    1,
+                    "2022-07-16 19:07:50.192981",
+                    "2022-07-16 19:07:50.192981",
+                    2
+                ],
+                [
+                    10,
+                    "PumanFerrari Shoes",
+                    "pumanferrari-shoes",
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    285,
+                    "photos\/products\/Puma-Ferrari-Shoes.jpg",
+                    487,
+                    1,
+                    "2022-07-16 19:12:08.964628",
+                    "2022-07-16 19:12:08.964628",
+                    5
+                ],
+                [
+                    11,
+                    "Wrangler Shirt",
+                    "wrangler-shirt",
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    458,
+                    "photos\/products\/Wrangler-Shirt.jpg",
+                    325,
+                    1,
+                    "2022-07-16 19:13:19.753356",
+                    "2022-08-06 16:27:19.043599",
+                    6
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "store_productgallerymodel",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"store_productgallerymodel\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"image\" varchar(255) NOT NULL, \"product_id\" bigint NOT NULL REFERENCES \"store_product\" (\"id\") DEFERRABLE INITIALLY DEFERRED)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "image",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "product_id",
+                    "type": "bigint",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"store_product\" (\"id\") "
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    3,
+                    "store\/products\/1.jpg",
+                    11
+                ],
+                [
+                    4,
+                    "store\/products\/1_yJVq1J4.jpg",
+                    1
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "store_reviewrating",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"store_reviewrating\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"subject\" varchar(100) NOT NULL, \"review\" varchar(500) NOT NULL, \"ip\" varchar(100) NOT NULL, \"rating\" real NOT NULL, \"status\" bool NOT NULL, \"created_at\" datetime NOT NULL, \"updated_at\" datetime NOT NULL, \"product_id\" bigint NOT NULL REFERENCES \"store_product\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"user_id\" bigint NOT NULL REFERENCES \"accounts_accounts\" (\"id\") DEFERRABLE INITIALLY DEFERRED)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "subject",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "review",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "ip",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "rating",
+                    "type": "real",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "status",
+                    "type": "bool",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "created_at",
+                    "type": "datetime",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "updated_at",
+                    "type": "datetime",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "product_id",
+                    "type": "bigint",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"store_product\" (\"id\") "
+                        }
+                    ]
+                },
+                {
+                    "name": "user_id",
+                    "type": "bigint",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"accounts_accounts\" (\"id\") "
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    "test",
+                    "test1",
+                    "127.0.0.1",
+                    2,
+                    1,
+                    "2022-07-27 20:35:47.282758",
+                    "2022-07-27 20:35:47.282758",
+                    1,
+                    22
+                ],
+                [
+                    2,
+                    "test",
+                    "scsdvdsvdvdsdsvsdvdsvs",
+                    "127.0.0.1",
+                    4.5,
+                    1,
+                    "2022-08-01 16:57:41.014638",
+                    "2022-08-01 17:01:54.977921",
+                    2,
+                    22
+                ],
+                [
+                    3,
+                    "test",
+                    "sdsfsd",
+                    "127.0.0.1",
+                    5,
+                    1,
+                    "2022-08-01 17:01:12.398395",
+                    "2022-08-05 18:44:30.579094",
+                    2,
+                    2
+                ],
+                [
+                    4,
+                    "Review",
+                    "This Product Is awsome.",
+                    "127.0.0.1",
+                    4.5,
+                    1,
+                    "2022-08-05 18:45:19.955288",
+                    "2022-08-05 18:45:19.955288",
+                    1,
+                    22
+                ],
+                [
+                    5,
+                    "Review",
+                    "This Product Is great.",
+                    "127.0.0.1",
+                    5,
+                    1,
+                    "2022-08-05 18:45:47.263703",
+                    "2022-08-05 18:45:47.263703",
+                    6,
+                    1
+                ],
+                [
+                    6,
+                    "Review",
+                    "This Product Is very useful.",
+                    "127.0.0.1",
+                    5,
+                    1,
+                    "2022-08-05 18:46:12.169285",
+                    "2022-08-05 18:46:12.169285",
+                    4,
+                    11
+                ],
+                [
+                    7,
+                    "Review",
+                    "This Product Is great.",
+                    "127.0.0.1",
+                    4,
+                    1,
+                    "2022-08-05 18:47:13.749983",
+                    "2022-08-05 18:47:13.749983",
+                    1,
+                    2
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "store_variationmodel",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE \"store_variationmodel\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"variation_value\" varchar(150) NOT NULL, \"is_active\" bool NOT NULL, \"created_date\" datetime NOT NULL, \"product_id\" bigint NOT NULL REFERENCES \"store_product\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"variation_category\" varchar(100) NOT NULL)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "variation_value",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "is_active",
+                    "type": "bool",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "created_date",
+                    "type": "datetime",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "product_id",
+                    "type": "bigint",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "FOREIGN KEY",
+                            "definition": "REFERENCES \"store_product\" (\"id\") "
+                        }
+                    ]
+                },
+                {
+                    "name": "variation_category",
+                    "type": "varchar",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    "Red",
+                    1,
+                    "2022-07-13 14:44:39.556020",
+                    1,
+                    "color"
+                ],
+                [
+                    2,
+                    "Blue",
+                    1,
+                    "2022-07-13 14:45:04.563758",
+                    2,
+                    "color"
+                ],
+                [
+                    3,
+                    "Small",
+                    1,
+                    "2022-07-13 15:43:54.426144",
+                    1,
+                    "size"
+                ],
+                [
+                    4,
+                    "Large",
+                    1,
+                    "2022-07-13 15:44:07.067242",
+                    2,
+                    "size"
+                ],
+                [
+                    5,
+                    "Orange",
+                    1,
+                    "2022-07-13 19:24:42.788906",
+                    1,
+                    "color"
+                ],
+                [
+                    6,
+                    "Yellow",
+                    1,
+                    "2022-07-13 19:24:55.758995",
+                    2,
+                    "color"
+                ],
+                [
+                    7,
+                    "Yellow",
+                    1,
+                    "2022-07-13 19:25:07.885355",
+                    1,
+                    "color"
+                ],
+                [
+                    8,
+                    "Orange",
+                    1,
+                    "2022-07-13 19:25:16.120164",
+                    1,
+                    "color"
+                ],
+                [
+                    9,
+                    "Medium",
+                    1,
+                    "2022-07-13 19:25:42.819802",
+                    1,
+                    "size"
+                ],
+                [
+                    10,
+                    "Medium",
+                    1,
+                    "2022-07-13 19:25:49.415447",
+                    2,
+                    "size"
+                ]
+            ]
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "auth_group_permissions_group_id_b120cbf9",
+            "unique": false,
+            "ddl": "CREATE INDEX \"auth_group_permissions_group_id_b120cbf9\" ON \"auth_group_permissions\" (\"group_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "auth_group_permissions_group_id_permission_id_0cd325b0_uniq",
+            "unique": true,
+            "ddl": "CREATE UNIQUE INDEX \"auth_group_permissions_group_id_permission_id_0cd325b0_uniq\" ON \"auth_group_permissions\" (\"group_id\", \"permission_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "auth_group_permissions_permission_id_84c5c92e",
+            "unique": false,
+            "ddl": "CREATE INDEX \"auth_group_permissions_permission_id_84c5c92e\" ON \"auth_group_permissions\" (\"permission_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "auth_permission_content_type_id_2f476e4b",
+            "unique": false,
+            "ddl": "CREATE INDEX \"auth_permission_content_type_id_2f476e4b\" ON \"auth_permission\" (\"content_type_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "auth_permission_content_type_id_codename_01ab375a_uniq",
+            "unique": true,
+            "ddl": "CREATE UNIQUE INDEX \"auth_permission_content_type_id_codename_01ab375a_uniq\" ON \"auth_permission\" (\"content_type_id\", \"codename\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "carts_cartitem_cart_id_9cb0a756",
+            "unique": false,
+            "ddl": "CREATE INDEX \"carts_cartitem_cart_id_9cb0a756\" ON \"carts_cartitem\" (\"cart_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "carts_cartitem_product_id_acd010e4",
+            "unique": false,
+            "ddl": "CREATE INDEX \"carts_cartitem_product_id_acd010e4\" ON \"carts_cartitem\" (\"product_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "carts_cartitem_user_id_4d21e0d9",
+            "unique": false,
+            "ddl": "CREATE INDEX \"carts_cartitem_user_id_4d21e0d9\" ON \"carts_cartitem\" (\"user_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "carts_cartitem_variations_cartitem_id_8be23372",
+            "unique": false,
+            "ddl": "CREATE INDEX \"carts_cartitem_variations_cartitem_id_8be23372\" ON \"carts_cartitem_variations\" (\"cartitem_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "carts_cartitem_variations_cartitem_id_variationmodel_id_d017f455_uniq",
+            "unique": true,
+            "ddl": "CREATE UNIQUE INDEX \"carts_cartitem_variations_cartitem_id_variationmodel_id_d017f455_uniq\" ON \"carts_cartitem_variations\" (\"cartitem_id\", \"variationmodel_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "carts_cartitem_variations_variationmodel_id_b4123571",
+            "unique": false,
+            "ddl": "CREATE INDEX \"carts_cartitem_variations_variationmodel_id_b4123571\" ON \"carts_cartitem_variations\" (\"variationmodel_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "django_admin_log_content_type_id_c4bce8eb",
+            "unique": false,
+            "ddl": "CREATE INDEX \"django_admin_log_content_type_id_c4bce8eb\" ON \"django_admin_log\" (\"content_type_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "django_admin_log_user_id_c564eba6",
+            "unique": false,
+            "ddl": "CREATE INDEX \"django_admin_log_user_id_c564eba6\" ON \"django_admin_log\" (\"user_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "django_content_type_app_label_model_76bd3d3b_uniq",
+            "unique": true,
+            "ddl": "CREATE UNIQUE INDEX \"django_content_type_app_label_model_76bd3d3b_uniq\" ON \"django_content_type\" (\"app_label\", \"model\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "django_session_expire_date_a5c62663",
+            "unique": false,
+            "ddl": "CREATE INDEX \"django_session_expire_date_a5c62663\" ON \"django_session\" (\"expire_date\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "Order_order_payment_id_a90f091f",
+            "unique": false,
+            "ddl": "CREATE INDEX \"Order_order_payment_id_a90f091f\" ON \"Order_order\" (\"payment_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "Order_order_product_order_id_e2a47f02",
+            "unique": false,
+            "ddl": "CREATE INDEX \"Order_order_product_order_id_e2a47f02\" ON \"Order_order_product\" (\"order_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "Order_order_product_payment_id_2172b0c8",
+            "unique": false,
+            "ddl": "CREATE INDEX \"Order_order_product_payment_id_2172b0c8\" ON \"Order_order_product\" (\"payment_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "Order_order_product_product_id_02b3ca88",
+            "unique": false,
+            "ddl": "CREATE INDEX \"Order_order_product_product_id_02b3ca88\" ON \"Order_order_product\" (\"product_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "Order_order_product_user_id_3aba25da",
+            "unique": false,
+            "ddl": "CREATE INDEX \"Order_order_product_user_id_3aba25da\" ON \"Order_order_product\" (\"user_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "Order_order_product_variations_order_product_id_4f5b205e",
+            "unique": false,
+            "ddl": "CREATE INDEX \"Order_order_product_variations_order_product_id_4f5b205e\" ON \"Order_order_product_variations\" (\"order_product_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "Order_order_product_variations_order_product_id_variationmodel_id_cfd77745_uniq",
+            "unique": true,
+            "ddl": "CREATE UNIQUE INDEX \"Order_order_product_variations_order_product_id_variationmodel_id_cfd77745_uniq\" ON \"Order_order_product_variations\" (\"order_product_id\", \"variationmodel_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "Order_order_product_variations_variationmodel_id_82f0fc5f",
+            "unique": false,
+            "ddl": "CREATE INDEX \"Order_order_product_variations_variationmodel_id_82f0fc5f\" ON \"Order_order_product_variations\" (\"variationmodel_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "Order_order_user_id_de1a5bf6",
+            "unique": false,
+            "ddl": "CREATE INDEX \"Order_order_user_id_de1a5bf6\" ON \"Order_order\" (\"user_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "Order_payment_user_id_a2841fba",
+            "unique": false,
+            "ddl": "CREATE INDEX \"Order_payment_user_id_a2841fba\" ON \"Order_payment\" (\"user_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "store_product_category_id_574bae65",
+            "unique": false,
+            "ddl": "CREATE INDEX \"store_product_category_id_574bae65\" ON \"store_product\" (\"category_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "store_productgallerymodel_product_id_efc16050",
+            "unique": false,
+            "ddl": "CREATE INDEX \"store_productgallerymodel_product_id_efc16050\" ON \"store_productgallerymodel\" (\"product_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "store_reviewrating_product_id_2e1974d6",
+            "unique": false,
+            "ddl": "CREATE INDEX \"store_reviewrating_product_id_2e1974d6\" ON \"store_reviewrating\" (\"product_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "store_reviewrating_user_id_da0ed849",
+            "unique": false,
+            "ddl": "CREATE INDEX \"store_reviewrating_user_id_da0ed849\" ON \"store_reviewrating\" (\"user_id\")"
+        },
+        {
+            "type": "index",
+            "database": null,
+            "name": "store_variationmodel_product_id_64036e9a",
+            "unique": false,
+            "ddl": "CREATE INDEX \"store_variationmodel_product_id_64036e9a\" ON \"store_variationmodel\" (\"product_id\")"
+        }
+    ]
+}

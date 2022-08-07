@@ -1,0 +1,16 @@
+{% autoescape off %}
+
+
+Hello! {{user.full_name}}, we have successfully received your order.
+
+Order Number: {{order.order_number}}
+Transaction ID: {{payment.payment_id}}
+Payment Gateway: {{payment.payment_method}}
+Payment Status: {{payment.status}}
+Total Amount Paid: {{payment.amount_paid}}
+
+If you think it's not you then please ignore this email. Have a nice day.
+
+
+
+{% endautoescape %}
