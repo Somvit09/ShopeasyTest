@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn carzone.wsgi
+web: gunicorn shopeasy.wsgi
